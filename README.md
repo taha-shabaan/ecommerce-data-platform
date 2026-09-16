@@ -10,6 +10,7 @@ Analytics data platform for an ecommerce marketplace (Olist sample data).
 | [Architecture](docs/architecture.md) | Core stack, target diagrams, phased build order |
 | [Business requirements](docs/business-requirements.md) | Purpose, stakeholders, metrics, SLAs |
 | [Domain model](docs/domain-model.md) | Entities: customers, products, orders, order_items, payments (+ supporting) |
+| [Data dictionary](docs/data-dictionary.md) | Column meanings, types, and nullability for all `data/` CSVs |
 
 ## Data
 

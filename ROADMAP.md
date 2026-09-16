@@ -25,7 +25,7 @@ Phase E  AWS (S3, RDS, EC2, CloudWatch) → Deploy + monitor → Power BI
 - [x] Document schema + primary/foreign keys
 - [x] Place raw files under `data/` with entity names (`customers`, `products`, `orders`, `order_items`, `payments`)
 - [x] Add a small seed sample for local smoke tests
-- [x] Write a short data dictionary (column meanings, nullability)
+- [x] Write a short data dictionary (column meanings, nullability) — see `docs/data-dictionary.md`
 
 ### PostgreSQL
 - [x] Run Postgres via Docker Compose

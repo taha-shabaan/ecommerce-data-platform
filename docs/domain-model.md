@@ -1,7 +1,7 @@
 # Ecommerce Domain Model (Olist)
 
 Source: Brazilian Olist marketplace CSVs in `data/`.  
-**Related:** [Architecture](architecture.md) · [Business requirements](business-requirements.md)
+**Related:** [Architecture](architecture.md) · [Business requirements](business-requirements.md) · [Data dictionary](data-dictionary.md)
 
 Core entities: **customers**, **products**, **orders**, **order_items**, **payments**.  
 Supporting entities: **sellers**, **reviews**, **geolocation**, **product_category**.  
