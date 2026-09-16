@@ -20,16 +20,15 @@ Phase E  AWS (S3, RDS, EC2, CloudWatch) → Deploy + monitor → Power BI
 ---
 
 ## Phase A — Foundations (Batch + incremental + S3)
-
 ### Dataset
-- [ ] Choose or generate sample ecommerce dataset
-- [ ] Document schema + primary/foreign keys
+- [x] Choose or generate sample ecommerce dataset(olist dataset)
+- [x] Document schema + primary/foreign keys
 - [x] Place raw files under `data/` with entity names (`customers`, `products`, `orders`, `order_items`, `payments`)
-- [ ] Add a small seed sample for local smoke tests
-- [ ] Write a short data dictionary (column meanings, nullability)
+- [x] Add a small seed sample for local smoke tests
+- [x] Write a short data dictionary (column meanings, nullability)
 
 ### PostgreSQL
-- [ ] Run Postgres via Docker Compose
+- [x] Run Postgres via Docker Compose
 - [ ] Create source DB schemas/tables matching the dataset
 - [ ] Load initial CSV/JSON into Postgres
 - [ ] Add indexes for join/filter columns

@@ -29,7 +29,7 @@ Raw data files are gitignored; keep local copies in `data/`.
 | Transform / orchestrate | dbt, Apache Airflow |
 | CDC / streaming | Debezium, Apache Kafka |
 | Warehouse / BI | PostgreSQL → Redshift, Power BI |
-| Platform | Docker Compose, AWS (S3, RDS, EC2, CloudWatch), pytest, Great Expectations / dbt tests, GitHub |
+| Platform | Docker Compose, AWS (S3, RDS, EC2, CloudWatch), pytest, Great Expectations, GitHub |
 
 ## Target flow (short)
 
@@ -46,9 +46,33 @@ Olist CSV → Python/Pandas → PostgreSQL
 
 ## Quick start
 
+### PostgreSQL (Docker Compose)
+
 ```bash
-# Phase A (foundations) — coming next on the roadmap:
-# docker compose up -d
+cp .env.example .env   # if you don't already have .env
+docker compose up -d
+docker compose ps      # wait until postgres is healthy
+```
+
+Connect:
+
+```bash
+docker compose exec postgres psql -U ecommerce -d ecommerce
+```
+
+Default connection (see `.env.example`):
+
+| Variable | Default |
+|----------|---------|
+| Host | `localhost` |
+| Port | `5433` (host; container still uses `5432`) |
+| Database | `ecommerce` |
+| User / password | `ecommerce` / `ecommerce` |
+
+On first start, `sql/init/01_schemas.sql` creates schemas: `ops`, `staging`, `analytics`.
+
+```bash
+# Later (Phase A Python):
 # python -m venv .venv && source .venv/bin/activate
 # pip install -r requirements.txt
 ```

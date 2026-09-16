@@ -2,6 +2,12 @@
 /data/*
 !/data/.gitkeep
 
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Scratch
 ./Untitled
 ./Untitled.txt
 ./ROADMAP.md
