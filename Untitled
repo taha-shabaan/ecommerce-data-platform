@@ -1,0 +1,54 @@
+Week 1
+│
+├── Business requirements
+├── Dataset
+├── PostgreSQL
+├── Python
+└── Batch ETL
+
+        ↓
+
+Week 2
+│
+├── Incremental loading
+├── Watermarks
+├── Upserts
+├── Idempotency
+└── Data quality
+
+        ↓
+
+Week 3
+│
+├── S3
+├── Bronze/Silver/Gold
+├── PySpark
+├── Dimensional modeling
+└── Data warehouse
+
+        ↓
+
+Week 4
+│
+├── dbt
+├── Airflow
+├── Testing
+└── Production orchestration
+
+        ↓
+
+Week 5
+│
+├── Kafka
+├── 
+├── CDC
+└── StreDebeziumaming
+
+        ↓
+
+Week 6
+│
+├── Spark Streaming
+├── Real-time analytics
+├── Dashboard
+└── AWS deployment

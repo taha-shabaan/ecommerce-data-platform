@@ -1,0 +1,7 @@
+# Dataset (large CSVs — keep empty folder in git)
+/data/*
+!/data/.gitkeep
+
+./Untitled
+./Untitled.txt
+./ROADMAP.md
